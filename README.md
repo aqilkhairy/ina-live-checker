@@ -4,4 +4,6 @@ A fan-made website dedicated to a Hololive vtuber, Ninomae Ina'nis. This website
 
 API by Holodex
 
+Demo: https://ina-live.42web.io/
+
 ![Preview](img.png)
