@@ -59,7 +59,7 @@ if (!empty($liveStreamData)) {
         "title" => $liveStream['title'],
         "thumbnail" => 'https://i.ytimg.com/vi/' . $liveStream['id'] . '/hqdefault.jpg',
         "link" => "https://www.youtube.com/watch?v=" . $liveStream['id'],
-        "publishedAt" => $liveStream['published_at']
+        "publishedAt" => $liveStream['published_at'] ?? $liveStream['available_at']
     ];
 }
 
@@ -73,7 +73,7 @@ if (!empty($archivedStreamsData)) {
             "title" => $stream['title'],
             "thumbnail" => 'https://i.ytimg.com/vi/' . $stream['id'] . '/hqdefault.jpg',
             "link" => "https://www.youtube.com/watch?v=" . $stream['id'],
-            "publishedAt" => $stream['published_at']
+            "publishedAt" => $stream['available_at']
         ];
     }
 
